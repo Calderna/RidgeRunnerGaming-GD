@@ -1,0 +1,208 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="Ridge Runner Gaming">
+  <meta name="author" content="SitePoint">
+
+  <meta property="og:title" content="Ridge Runner Gaming">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.sitepoint.com/a-basic-html5-template/">
+  <meta property="og:description" content="Ridge Runner Gaming">
+  <meta property="og:image" content="image.png">
+
+  <link rel="icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer"
+  />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+    *
+    {
+        margin:0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+    }
+    body
+    {
+        height: 100vh;
+        background: radial-gradient(#fff,#3E75c3  );
+        background-size: cover;
+        background-position: center;
+    }
+    li
+    {
+    list-style: none;
+    }
+    a
+    {
+        text-decoration: none;
+        color: #0e0d0d;
+        font-size: 1rem;
+    }
+    a:hover
+    {
+        color: #BAD902;
+    }
+    header
+    {
+        position: relative;
+        padding: 0.2rem;
+    }
+    .navbar
+    {
+        width: 100%;
+        height: 60px;
+        max-width: 1640px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .navbar .logo a
+    {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    .navbar .links
+    {
+        display: flex;
+        gap: 2rem;
+    }
+    .navbar .toggle_btn
+    {
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+        display: none;
+    }
+    .action_btn
+    {
+        background-color: orange;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        border: none;
+        outline: none;
+        border-radius: 20px;
+        font-size: 0.8rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: scale .2 ease;
+    }
+    .action_btn:hover
+    {
+        scale: 1.05;
+        color: #fff;
+    }
+    .action_btn:active
+    {
+        scale: 0.95;
+    }
+
+    /* DROPDOWN MENU */
+    .dropdown_menu
+    {
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 60px;
+        height: 0;
+        width: 300px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) ;
+    }
+    .dropdown_menu.open
+    {
+        height: 350px;
+    }
+    .dropdown_menu li
+    {
+        padding: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .dropdown_menu .action_btn
+    {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    /* HERO */
+    section#hero
+    {
+        height: calc(100vh - 60px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: #012951;
+    }
+    #hero h1
+    {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    #hero img
+    {
+        width: 100vh;
+        max-width: 100%;
+        height: auto; 
+    }
+    /* RESPONSIVE DESIGN MENUBAR*/
+    @media (max-width: 992px)
+    {
+        .navbar .links,
+        .navbar .action_btn 
+        {
+            display: none;
+        }
+        
+        .navbar .toggle_btn
+        {
+            display: block;
+        }
+    }
+    .dropdown_menu
+    {
+        display: block;
+    }
+    @media (max-width: 576px)
+    {
+        .dropdown_menu{
+            left: 2rem;
+            width: unset;
+        }
+    }
+  </style>
+  <title>Ridge Runner Gaming</title>
+
+</head>
+
+<body>
+    <main>
+        <section id="hero">
+            <img src="/image/RR85-ORANGE COIN 20220727b.png" alt="Ridge Runner Gaming-Logo">
+            <h1>Ridge Runner Gaming</h1>
+            <p>Stay Greasy, Don't be Easy</p>
+        </section>
+    </main>
+</body>
+</html>
